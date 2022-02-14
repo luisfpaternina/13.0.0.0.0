@@ -77,7 +77,7 @@ class AccountJournal(models.Model):
         else:
             self.use_documents = False
 
-    @api.multi
+    @api.model
     @api.constrains(
         'code',
         'company_id',

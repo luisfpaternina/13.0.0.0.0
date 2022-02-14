@@ -46,7 +46,7 @@ class AccountMove(models.Model):
         index=True,
     )
 
-    @api.multi
+    @api.model
     @api.depends(
         'document_number',
         'name',
@@ -65,7 +65,7 @@ class AccountMove(models.Model):
                 display_name = rec.document_number or rec.name
             rec.display_name = display_name
 
-    @api.multi
+    @api.model
     @api.depends(
         'name', 'state',
         'document_number', 'document_type_id.doc_code_prefix')

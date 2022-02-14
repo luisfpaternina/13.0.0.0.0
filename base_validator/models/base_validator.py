@@ -44,7 +44,7 @@ class BaseValidator(models.Model):
         compute='_compute_output_test_string',
     )
 
-    @api.multi
+    @api.model
     def _validation_eval_context(self, value):
         self.ensure_one()
         return {'self': self,
@@ -52,7 +52,7 @@ class BaseValidator(models.Model):
                 're': re,
                 }
 
-    @api.multi
+    @api.model
     def validate_value(self, value, do_not_raise=False, return_parts=False):
         """Validate the given ID number
         The method raises an odoo.exceptions.ValidationError if the eval of

@@ -45,7 +45,7 @@ class AccountInvoiceRefund(models.TransientModel):
         string='Available Journal Document Types',
     )
 
-    @api.multi
+    @api.model
     def onchange(self, values, field_name, field_onchange):
         """
         Idea obtenida de aca
@@ -64,7 +64,7 @@ class AccountInvoiceRefund(models.TransientModel):
         return super(AccountInvoiceRefund, self).onchange(
             values, field_name, field_onchange)
 
-    @api.multi
+
     @api.depends('invoice_id')
     def _compute_available_journal_document_types(self):
         for rec in self:
@@ -79,7 +79,7 @@ class AccountInvoiceRefund(models.TransientModel):
             rec.journal_document_type_id = res[
                 'journal_document_type']
 
-    @api.multi
+    @api.model
     def compute_refund(self, mode='refund'):
         return super(AccountInvoiceRefund, self.with_context(
             refund_journal_document_type_id=self.journal_document_type_id.id,

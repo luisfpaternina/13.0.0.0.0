@@ -23,7 +23,7 @@ class AccountChartTemplate(models.Model):
         'this chart, this localization will be set on company'
     )
 
-    @api.multi
+    @api.model
     def _load_template(
             self, company, code_digits=None, account_ref=None, taxes_ref=None):
         """

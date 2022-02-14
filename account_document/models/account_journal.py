@@ -91,7 +91,7 @@ class AccountJournal(models.Model):
         """
         return self._update_journal_document_types()
 
-    @api.multi
+    @api.model
     def _update_journal_document_types(self):
         """
         Function to be inherited by different localizations

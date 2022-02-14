@@ -1,7 +1,7 @@
 
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError
-from odoo.addons.account.models.account_invoice import TYPE2REFUND
+#from odoo.addons.account.models.account_invoice import TYPE2REFUND
 
 
 class AccountInvoiceRefund(models.TransientModel):

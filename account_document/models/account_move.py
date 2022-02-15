@@ -26,10 +26,12 @@ class AccountMove(models.Model):
 
     @api.onchange('document_type_id','is_expo')
     def _onchange_document(self):
-        journal_obj = self.env['account.journal'].search([('name', '=' 'EXPO PATER')],limit=1)
+        journal_obj = self.env['account.journal'].search([])
         logging.info("######################")
         logging.info(journal_obj)
-        for record in self:
-            if record.is_expo == True:
-                record.journal_id.name = 'EXPO PATER'
-                logging.info("TESTINGGGGGGGGGGGGGGG")
+        for j in journal_obj:
+            if j.name == 'EXPO PATER':
+                logging.info("===============")
+                logging.info(j)
+                self.journal_id.name = 'PATERNINA'
+                logging.info("----------------------------------")

@@ -25,7 +25,6 @@ class AccountJournalDocumentType(models.Model):
         "the documents entries of this document type."
     )
     journal_id = fields.Many2one('account.journal',)
-    journal_type = fields.Selection()
     sequence = fields.Integer(
         'Sequence',
         index=True,

@@ -30,8 +30,8 @@ class AccountMove(models.Model):
         logging.info("######################")
         logging.info(journal_obj)
         for j in journal_obj:
-            if j.name == 'EXPO PATER':
+            if j.is_expo == True:
                 logging.info("===============")
                 logging.info(j)
-                self.journal_id.name = 'PATERNINA'
+                self.journal_id.name = 'Pto Venta 2 - Exportación'
                 logging.info("----------------------------------")

@@ -9,3 +9,5 @@ class AccountMove(models.Model):
         'Document Type')
     document_number = fields.Char(
         string='Document Number')
+    is_expo = fields.Boolean(
+        string="Is expo")

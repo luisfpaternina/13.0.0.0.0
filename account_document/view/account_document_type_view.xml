@@ -12,7 +12,6 @@
                     <field name='doc_code_prefix'/>
                     <field name='report_name'/>
                     <field name='internal_type'/>
-                    <field name='localization'/>
                     <field name='validator_id'/>
                     <field name='taxes_included'/>
                     <field name='active'/>
@@ -32,25 +31,7 @@
                 <field name="doc_code_prefix"/>
                 <field name='report_name'/>
                 <field name='internal_type'/>
-                <field name='localization'/>
             </tree>
-        </field>
-    </record>
-
-    <record id="view_document_type_filter" model="ir.ui.view">
-        <field name="name">account.document.type.filter</field>
-        <field name="model">account.document.type</field>
-        <field name="arch" type="xml">
-            <search string="Document Type">
-                <field name="name"/>
-                <field name="code"/>
-                <field name='internal_type'/>
-                <field name='localization'/>
-                <group expand="1" string="Group By...">
-                    <filter string="Internal Type" name="group_by_internal_type" context="{'group_by':'internal_type'}"/>
-                    <filter string="Localization" name="group_by_localization" context="{'group_by':'localization'}"/>
-                </group>
-            </search>
         </field>
     </record>
 

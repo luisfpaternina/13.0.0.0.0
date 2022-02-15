@@ -12,13 +12,6 @@ class AccountDocmentType(models.Model):
         required=True,
         help="Used to order records in tree views and relational fields"
     )
-    localization = fields.Selection(
-        _get_localizations,
-        'Localization',
-        help='If you set a localization here then it will be available only '
-        'for companies of this localization',
-        index=True,
-    )
     name = fields.Char(
         'Name',
         required=True,

@@ -5,8 +5,7 @@
     "license": "AGPL-3",
     "category": "Accounting",
     "depends": [
-        "account",
-        "base_validator",
+        "account"
     ],
     "data": [
         'view/account_move_line_view.xml',

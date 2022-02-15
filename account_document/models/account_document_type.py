@@ -1,6 +1,4 @@
-from odoo import fields, models, api
-# from odoo.exceptions import UserError
-
+from odoo import fields, models, api, _
 
 class AccountDocmentType(models.Model):
     _name = 'account.document.type'

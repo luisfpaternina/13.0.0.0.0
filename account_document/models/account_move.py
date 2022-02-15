@@ -16,7 +16,7 @@ class AccountMove(models.Model):
     @api.depends('document_type_id')
     def _compute_is_expo(self):
         for record in self:
-            if document_type_id.name == 'FACTURAS DE EXPORTACION':
+            if record.document_type_id.name == 'FACTURAS DE EXPORTACION':
                 record.is_expo = True
             else:
                 record.is_expo = False

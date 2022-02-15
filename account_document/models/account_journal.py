@@ -24,7 +24,7 @@ class AccountJournalDocumentType(models.Model):
         help="This field contains the information related to the numbering of "
         "the documents entries of this document type."
     )
-    journal_id = fields.Many2one('account.journal',)
+    journal_id = fields.Many2one('account.journal')
     sequence = fields.Integer(
         'Sequence',
         index=True,
@@ -43,13 +43,4 @@ class AccountJournal(models.Model):
     )
     use_documents = fields.Boolean(
         'Use Documents?',
-    )
-    document_sequence_type = fields.Selection(
-        # TODO this field could go in argentina localization
-        [('own_sequence', 'Own Sequence'),
-            ('same_sequence', 'Same Invoice Sequence')],
-        string='Document Sequence Type',
-        default='own_sequence',
-        required=False,
-        help="Use own sequence or invoice sequence on Debit and Credit Notes?",
     )

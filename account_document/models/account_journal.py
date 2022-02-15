@@ -12,18 +12,7 @@ class AccountJournalDocumentType(models.Model):
 
     document_type_id = fields.Many2one(
         'account.document.type',
-        'Document Type',
-        required=True,
-        ondelete='cascade',
-        auto_join=True,
-        index=True,
-    )
-    sequence_id = fields.Many2one(
-        'ir.sequence',
-        'Entry Sequence',
-        help="This field contains the information related to the numbering of "
-        "the documents entries of this document type."
-    )
+        'Document Type')
     journal_id = fields.Many2one('account.journal')
     sequence = fields.Integer(
         'Sequence',
@@ -35,12 +24,5 @@ class AccountJournalDocumentType(models.Model):
 class AccountJournal(models.Model):
     _inherit = "account.journal"
 
-    journal_document_type_ids = fields.One2many(
-        'account.journal.document.type',
-        'journal_id',
-        'Documents Types',
-        auto_join=True,
-    )
     use_documents = fields.Boolean(
-        'Use Documents?',
-    )
+        'Use Documents?')

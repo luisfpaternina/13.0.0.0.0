@@ -26,6 +26,13 @@
     <record model="ir.actions.act_window" id="action_document_type">
         <field name="name">Document Types</field>
         <field name="res_model">account.document.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create new record
+            </p>
+        </field>
     </record>
 
     <menuitem action="action_document_type" id="menu_document_type" sequence="20" parent="account.account_account_menu"/>

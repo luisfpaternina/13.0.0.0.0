@@ -9,4 +9,4 @@ class AccountMoveLine(models.Model):
     def _change_account(self):
         for record in self:
             if record.product_id:
-                record.account_id = record.move_id.journal_id.default_debit_account_id.id
+                record.account_id = record.move_id.journal_expo_id.default_debit_account_id.id

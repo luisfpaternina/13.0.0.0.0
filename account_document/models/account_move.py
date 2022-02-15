@@ -33,4 +33,4 @@ class AccountMove(models.Model):
         logging.info("######################")
         logging.info(journal_obj)
         if journal_obj:
-            self.journal_id = journal_obj.id
+            self.journal_expo_id = journal_obj.id

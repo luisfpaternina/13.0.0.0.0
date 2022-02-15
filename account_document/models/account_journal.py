@@ -11,3 +11,11 @@ class AccountJournalDocumentType(models.Model):
     journal_id = fields.Many2one('account.journal')
     sequence = fields.Integer()
     next_number = fields.Integer()
+
+
+
+class AccountJournal(models.Model):
+    _inherit = "account.journal"
+
+    is_expo = fields.Boolean(
+        string="Is expo")

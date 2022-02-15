@@ -2,3 +2,8 @@
 	path = bs-lacardeuse-erp-odoo
 	url = https://github.com/nybblegroup/bs-lacardeuse-erp-odoo.git
 	branch = dev
+
+[submodule "nybblegroup/bs-lacardeuse-erp-odoo"]
+	path = nybblegroup/bs-lacardeuse-erp-odoo
+	url = git@github.com:nybblegroup/bs-lacardeuse-erp-odoo.git
+	branch = dev

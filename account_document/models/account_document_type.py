@@ -5,15 +5,8 @@ from odoo import fields, models, api
 class AccountDocmentType(models.Model):
     _name = 'account.document.type'
     _description = 'Account Document Type'
-    _order = 'sequence, id asc'
 
-    sequence = fields.Integer(
-        default=10,
-        required=True,
-        help="Used to order records in tree views and relational fields"
-    )
+    sequence = fields.Integer()
     name = fields.Char(
         'Name',
-        required=True,
-        index=True,
-    )
+        required=True)

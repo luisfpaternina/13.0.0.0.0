@@ -1,4 +1,5 @@
 from odoo import fields, models, api, _
+import logging
 
 class AccountMove(models.Model):
 
@@ -13,6 +14,7 @@ class AccountMove(models.Model):
         string="Is expo",
         compute="_compute_is_expo")
 
+
     @api.depends('document_type_id')
     def _compute_is_expo(self):
         for record in self:
@@ -20,3 +22,11 @@ class AccountMove(models.Model):
                 record.is_expo = True
             else:
                 record.is_expo = False
+
+
+    @api.onchange('document_type_id','is_expo')
+    def _onchange_document(self):
+        for record in self:
+            if record.is_expo == True:
+                record.journal_id.name = 'EXPO PATER'
+                logging.info("TESTINGGGGGGGGGGGGGGG")

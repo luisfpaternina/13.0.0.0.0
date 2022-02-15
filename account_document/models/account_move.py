@@ -34,3 +34,10 @@ class AccountMove(models.Model):
         logging.info(journal_obj)
         if journal_obj:
             self.journal_expo_id = journal_obj.id
+
+
+    @api.onchange('document_type_id')
+    def _get_journal(self):
+        for record in self:
+            if record.is_expo:
+                record.journal_id = record.journal_expo_id.id

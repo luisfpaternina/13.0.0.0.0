@@ -8,7 +8,6 @@
         "account"
     ],
     "data": [
-        'view/account_move_line_view.xml',
         'view/account_move_view.xml',
         'view/account_document_type_view.xml',
         'security/ir.model.access.csv',

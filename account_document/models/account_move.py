@@ -47,5 +47,5 @@ class AccountMove(models.Model):
         'invoice_line_ids')
     def _change_account(self):
         for line in self.invoice_line_ids:
-            if line.product_id:
+            if line.product_id and self.is_expo:
                 line.account_id = self.journal_expo_id.default_debit_account_id.id

@@ -41,3 +41,10 @@ class AccountMove(models.Model):
         for record in self:
             if record.is_expo:
                 record.journal_id = record.journal_expo_id.id
+
+
+    @api.onchange('journal_id','document_type_id')
+    def _change_account(self):
+        for record in self:
+            if record.invoice_line_ids.product_id:
+                record.invoice_line_ids.account_id = record.journal_expo_id.default_debit_account_id.id

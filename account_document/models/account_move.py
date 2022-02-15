@@ -12,4 +12,3 @@ class AccountMove(models.Model):
         'Document Type')
     document_number = fields.Char(
         string='Document Number')
-    display_name = fields.Char()

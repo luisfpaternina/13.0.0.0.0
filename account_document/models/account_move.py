@@ -26,7 +26,7 @@ class AccountMove(models.Model):
 
     @api.onchange('document_type_id','is_expo')
     def _onchange_document(self):
-        journal_obj = self.env['account.journal'].search([('is_expo', '=' True)],limit=1)
+        journal_obj = self.env['account.journal'].search([('name', '=' 'EXPO PATER')],limit=1)
         logging.info("######################")
         logging.info(journal_obj)
         for record in self:

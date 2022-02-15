@@ -7,14 +7,7 @@
         <field name="arch" type="xml">
             <form string="Document Type">
                 <group>
-                    <field name='code'/>
                     <field name="name"/>
-                    <field name='doc_code_prefix'/>
-                    <field name='report_name'/>
-                    <field name='internal_type'/>
-                    <field name='validator_id'/>
-                    <field name='taxes_included'/>
-                    <field name='active'/>
                 </group>
             </form>
         </field>
@@ -25,12 +18,7 @@
         <field name="model">account.document.type</field>
         <field name="arch" type="xml">
             <tree string="Document Type">
-                <field name="sequence" widget="handle"/>
-                <field name="code"/>
                 <field name="name"/>
-                <field name="doc_code_prefix"/>
-                <field name='report_name'/>
-                <field name='internal_type'/>
             </tree>
         </field>
     </record>

@@ -13,6 +13,9 @@ class AccountMove(models.Model):
     is_expo = fields.Boolean(
         string="Is expo",
         compute="_compute_is_expo")
+    journal_expo_id = fields.Many2one(
+        'account.journal',
+        string="Journal expo")
 
 
     @api.depends('document_type_id')

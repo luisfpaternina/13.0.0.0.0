@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="view_document_type_form" model="ir.ui.view">
-        <field name="name">account.document.type.form</field>
-        <field name="model">account.document.type</field>
-        <field name="arch" type="xml">
-            <form string="Document Type">
-                <group>
-                    <field name="name"/>
-                </group>
-            </form>
-        </field>
-    </record>
+     <record id="view_document_type_form" model="ir.ui.view">
+            <field name="name">account.document.type</field>
+            <field name="model">account.document.type</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <field name="name" required="1" placeholder="Name"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
 
     <record id="view_document_type_tree" model="ir.ui.view">
         <field name="name">account.document.type.tree</field>

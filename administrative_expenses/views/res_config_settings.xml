@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">certificate_planer.res.config.settings.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+          
+            <xpath expr="//div[@id='invoicing_settings']" position="after">
+                <h2>Administrative expenses</h2>
+                <div class="row mt16 o_settings_container">
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label for="late_charge" class="col-sm-2 o_light_label"/>
+                            <field name="late_charge" placeholder="Cargo por pago fuera de término"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="late_charge_value" class="col-sm-2 o_light_label"/>
+                            <field name="late_charge_value"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="late_charge_days" class="col-sm-2 o_light_label"/>
+                            <field name="late_charge_days" invisible="1"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label for="late_fee" class="col-sm-2 o_light_label"/>
+                            <field name="late_fee" placeholder="Cargo por mora"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="late_fee_value" class="col-sm-2 o_light_label"/>
+                            <field name="late_fee_value"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="late_fee_days" class="col-sm-2 o_light_label"/>
+                            <field name="late_fee_days" invisible="1"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label for="block_name" class="col-sm-2 o_light_label"/>
+                            <field name="block_name" placeholder="Costo de bloqueo modem"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="block_value" class="col-sm-2 o_light_label"/>
+                            <field name="block_value"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label for="block_rejected" class="col-sm-2 o_light_label"/>
+                            <field name="block_rejected" placeholder="Cargo por débito rechazado"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="rejected_value" class="col-sm-2 o_light_label"/>
+                            <field name="rejected_value"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

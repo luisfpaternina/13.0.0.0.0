@@ -1,0 +1,179 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* administrative_expenses
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-28 19:54+0000\n"
+"PO-Revision-Date: 2022-01-28 19:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_account_move__aditional_value
+msgid "Aditional value"
+msgstr "Valor adicional"
+
+#. module: administrative_expenses
+#: model_terms:ir.ui.view,arch_db:administrative_expenses.res_config_settings_view_form
+msgid "Administrative expenses"
+msgstr "Gastos administrativos"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_account_move__is_blocking
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_partner__is_blocking
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_users__is_blocking
+msgid "Blocking"
+msgstr "Bloqueo"
+
+#. module: administrative_expenses
+#: model_terms:ir.ui.view,arch_db:administrative_expenses.res_config_settings_view_form
+msgid "Cargo por débito rechazado"
+msgstr ""
+
+#. module: administrative_expenses
+#: model_terms:ir.ui.view,arch_db:administrative_expenses.res_config_settings_view_form
+msgid "Cargo por mora"
+msgstr ""
+
+#. module: administrative_expenses
+#: model_terms:ir.ui.view,arch_db:administrative_expenses.res_config_settings_view_form
+msgid "Cargo por pago fuera de término"
+msgstr ""
+
+#. module: administrative_expenses
+#: model:ir.model,name:administrative_expenses.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: administrative_expenses
+#: model:ir.model,name:administrative_expenses.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: administrative_expenses
+#: model:ir.model,name:administrative_expenses.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: administrative_expenses
+#: model_terms:ir.ui.view,arch_db:administrative_expenses.res_config_settings_view_form
+msgid "Costo de bloqueo modem"
+msgstr ""
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_account_move__days_difference
+msgid "Days"
+msgstr "Días"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_account_move__expense_name
+msgid "Expense name"
+msgstr "Nombre gasto administrativo"
+
+#. module: administrative_expenses
+#: model:product.template,name:administrative_expenses.id_administrative_expense
+msgid "Gasto administrativo"
+msgstr ""
+
+#. module: administrative_expenses
+#: model:ir.model,name:administrative_expenses.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_company__late_charge
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__late_charge
+msgid "Late charge"
+msgstr "Nombre"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_company__late_charge_days
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__late_charge_days
+msgid "Late charge days"
+msgstr "Días"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_company__late_charge_value
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__late_charge_value
+msgid "Late charge value"
+msgstr "%"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_company__late_fee
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__late_fee
+msgid "Late fee"
+msgstr "Nombre"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_company__late_fee_days
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__late_fee_days
+msgid "Late fee days"
+msgstr "Días"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_company__late_fee_value
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__late_fee_value
+msgid "Late fee value"
+msgstr "%"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_company__block_name
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__block_name
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__block_rejected
+msgid "Name"
+msgstr "Nombre"
+
+#. module: administrative_expenses
+#: model:ir.model,name:administrative_expenses.model_res_partner_category
+msgid "Partner Tags"
+msgstr "Etiquetas del contacto"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_account_move__aditional_payment_date
+msgid "Payment date"
+msgstr "Fecha de pago"
+
+#. module: administrative_expenses
+#: model:ir.model,name:administrative_expenses.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_account_move__expense_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_account_move__register_date
+msgid "Register date"
+msgstr "Fecha de registro pago"
+
+#. module: administrative_expenses
+#: model:product.template,uom_name:administrative_expenses.id_administrative_expense
+msgid "Units"
+msgstr "Unidades"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_account_move__is_validate
+#: model_terms:ir.ui.view,arch_db:administrative_expenses.view_account_move_inherit
+msgid "Validate"
+msgstr "Validador"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_account_move__is_validate_date
+msgid "Validate dates"
+msgstr "Validador de fechas"
+
+#. module: administrative_expenses
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_company__block_value
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__block_value
+#: model:ir.model.fields,field_description:administrative_expenses.field_res_config_settings__rejected_value
+msgid "Value"
+msgstr "Valor"

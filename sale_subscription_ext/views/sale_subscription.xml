@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_sale_subscription_inherit_form" model="ir.ui.view">
+        <field name="name">sale.subscription.form.inherit</field>
+        <field name="model">sale.subscription</field>
+        <field name="inherit_id" ref="sale_subscription.sale_subscription_view_form"/>
+        <field name="arch" type="xml"> 
+            <xpath expr="//field[(@name='partner_id')]" position="after">
+                <field name="city" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_sale_subscription_inherit_search" model="ir.ui.view">
+        <field name="name">sale.subscription.search.inherit</field>
+        <field name="model">sale.subscription</field>
+        <field name="inherit_id" ref="sale_subscription.sale_subscription_view_search"/>
+        <field name="arch" type="xml">
+
+            <field name="user_id" position="after">
+                <separator/>
+                <field name="city"/>
+            </field>
+
+            <xpath expr="//search/group" position="inside">
+                <filter string="City" name="city" context="{'group_by':'city'}"/>
+            </xpath>
+
+            <xpath expr="//search/filter[@name='open']" position="after">
+                 <filter string="City" name="city" domain="[('city', '!=', False)]"/>
+            </xpath>
+
+
+        </field>
+    </record>
+
+</odoo>   

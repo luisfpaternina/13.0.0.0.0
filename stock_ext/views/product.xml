@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="inherit_view_stoct_product_template" model="ir.ui.view">
+        <field name="name">inherit.form.view.product.template</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml"> 
+            <xpath expr="//field[(@name='default_code')]" position="after">
+                <field name="codigo_ncm"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

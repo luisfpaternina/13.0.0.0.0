@@ -1,0 +1,19 @@
+id,code,name
+reason_I,I,Tarjeta Inexistente
+reason_B,B,Inhabilitada para Operar
+reason_M,M,Situación Irregular (mora)
+reason_V,V,Tarjeta Vencida
+reason_L,L,Sin disponible
+reason_D,D,Operación Duplicada
+reason_R,R,Stop Debit
+reason_N,N,Establecimiento Desactivado
+reason_F,F,Tarjeta Inexistente – Bin del Exterior
+reason_C,C,Moneda Informada no corresponde a Moneda del Establecimiento
+reason_A,A,Fecha de Presentación
+reason_G,G,Importe no Válido
+reason_H,H,Fecha e prestación mayor 35 días
+reason_J,J,No acepta Débitos Automáticos
+reason_E,E,Bloqueo Transitorio
+reason_K,K,Código de operación no numérico
+reason_O,O,Consulte con la identidad
+reason_S,S,Verificar con Sistemas

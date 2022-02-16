@@ -33,6 +33,7 @@ class AccountMove(models.Model):
     register_date = fields.Date(
         string="Register date")
 
+
     @api.depends('days_difference')
     def _get_expenses_names(self):
         # Función para traer los datos de la parametrización(datos) realizada en res.config.settings

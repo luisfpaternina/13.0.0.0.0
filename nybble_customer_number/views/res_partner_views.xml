@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_partner_customer_number_form" model="ir.ui.view">
+            <field name="name">view_partner_address_structured_form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <group>
+                        <field name="customer_number" readonly="1" attrs="{'invisible': ['|', ('company_type', '!=', 'person'), ('customer_number', '=', 0)]}"/>
+                        <field name="customer_next_number" readonly="1" attrs="{'invisible': ['|', ('company_type', '=', 'company'), ('customer_number', '!=', 0)]}" />
+                    </group>
+                </xpath>
+                <xpath expr="//field[@name='customer_number']" position="after">
+                    <group>
+                        <field name="customer_type" widget="selection"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Partner -->
+        <record id="view_partner_add_customer_number_tree_inherit" model="ir.ui.view">
+            <field name="name">view_partner_add_customer_number_tree_inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='display_name']" position="before">
+                    <field name="customer_number" string="NC" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!--Tipos de clientes-->
+
+        <record id="res_partner_customer_type_tree" model="ir.ui.view">
+            <field name="name">res_partner_customer_type_tree</field>
+            <field name="model">res.partner_customer_type</field>
+            <field name="arch" type="xml">
+                <tree string="Tipos de Cliente" editable="bottom">
+                    <field name="name"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_res_partner_customer_type">
+          <field name="name">Tipos de Cliente</field>
+          <field name="res_model">res.partner_customer_type</field>
+          <field name="view_mode">tree</field>
+        </record>
+
+        <menuitem name="Tipos de Cliente"
+            id="menu_res_partner_customer_type"
+            parent="sale.menu_sale_config"
+            action="action_res_partner_customer_type"
+            sequence="2"/>
+
+
+    </data>
+</odoo>

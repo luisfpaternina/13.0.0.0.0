@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+		<!-- Tipos de cliente -->
+
+        <record id="rpct_canje" model="res.partner_customer_type">
+            <field name="name">Canje</field>
+            <field name="active">True</field>
+        </record>
+        <record id="rpct_corporativo" model="res.partner_customer_type">
+            <field name="name">Corporativo</field>
+            <field name="active">True</field>
+        </record>
+        <record id="rpct_residencial" model="res.partner_customer_type">
+            <field name="name">Residencial</field>
+            <field name="active">True</field>
+        </record>
+        <record id="rpct_sincargo" model="res.partner_customer_type">
+            <field name="name">Sin Cargo</field>
+            <field name="active">True</field>
+        </record>
+    </data>
+</odoo>
+

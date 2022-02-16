@@ -1,0 +1,76 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* nybble_sale_subscription_discounts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-11 13:15+0000\n"
+"PO-Revision-Date: 2022-02-11 10:25-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: nybble_sale_subscription_discounts
+#: code:addons/nybble_sale_subscription_discounts/models/sale_subscription.py:0
+#, python-format
+msgid "Discount {} was removed because it was applied {} times"
+msgstr "La bonificación {} fue removida porque ya fue aplicada {} veces"
+
+#. module: nybble_sale_subscription_discounts
+#: model:ir.model.fields,field_description:nybble_sale_subscription_discounts.field_sale_subscription_line__applied_discounts_counter
+msgid "Discounts Applied"
+msgstr "Bonificación aplicada"
+
+#. module: nybble_sale_subscription_discounts
+#: model:ir.model,name:nybble_sale_subscription_discounts.model_global_discount
+msgid "Global Discount"
+msgstr "Descuento Global"
+
+#. module: nybble_sale_subscription_discounts
+#: model:ir.model.fields,field_description:nybble_sale_subscription_discounts.field_sale_subscription_line__discount_id
+msgid "Line Discounts"
+msgstr "Bonificaciones por lineas"
+
+#. module: nybble_sale_subscription_discounts
+#: model:ir.model.fields,help:nybble_sale_subscription_discounts.field_sale_subscription_line__applied_discounts_counter
+msgid ""
+"Number of times that invoices were generated with this discount in the "
+"subscription line"
+msgstr ""
+"Cantidad de veces que se generaron facturas con este descuento en la linea "
+"de la suscripción"
+
+#. module: nybble_sale_subscription_discounts
+#: model:ir.model.fields,field_description:nybble_sale_subscription_discounts.field_global_discount__recurring_invoice_period_limit
+msgid "Recurring Invoice Period Limit"
+msgstr "Límite de períodos en facturas recurrentes"
+
+#. module: nybble_sale_subscription_discounts
+#: model:ir.model,name:nybble_sale_subscription_discounts.model_sale_subscription
+msgid "Subscription"
+msgstr "Suscripción"
+
+#. module: nybble_sale_subscription_discounts
+#: model:ir.model,name:nybble_sale_subscription_discounts.model_sale_subscription_line
+msgid "Subscription Line"
+msgstr "Línea de suscripción"
+
+#. module: nybble_sale_subscription_discounts
+#: model:ir.model.fields,help:nybble_sale_subscription_discounts.field_global_discount__recurring_invoice_period_limit
+msgid ""
+"The number of recurring billing periods that the "
+"discount                                                     will have an "
+"effect on. Enter negative value to make "
+"the                                                     discount apply to "
+"all recurring billing periods."
+msgstr ""
+"Cantidad de períodos de facturación recurrente que la bonificación se "
+"aplicará. Ingrese un valor negativo para que la bonificación se aplique sin "
+"límite de períodos."

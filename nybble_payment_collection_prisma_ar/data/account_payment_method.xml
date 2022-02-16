@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="dbto_tc_visa_prisma" model="account.payment.method">
+        <field name="name">Débito Tarjeta de Créditos VISA (prisma)</field>
+        <field name="code">dbto_tc_visa_prisma</field>
+        <field name="payment_type">inbound</field>
+        <field name="bank_account_required" eval="True" />
+        <field name="payment_order_only" eval="True" />
+    </record>
+    <record id="dbto_td_visa_prisma" model="account.payment.method">
+        <field name="name">Débito Tarjeta de Débito VISA (prisma)</field>
+        <field name="code">dbto_td_visa_prisma</field>
+        <field name="payment_type">inbound</field>
+        <field name="bank_account_required" eval="True" />
+        <field name="payment_order_only" eval="True" />
+    </record>
+</odoo>

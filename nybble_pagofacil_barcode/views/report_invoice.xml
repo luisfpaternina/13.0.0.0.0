@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_pagofacil_barcode" inherit_id="l10n_ar.report_invoice_document">
+        <!-- footer data -->
+        <div name="footer_left_column" position="inside">
+            <img t-if="o.l10n_ar_afip_qr_code" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s&amp;humanreadable=%s&amp;quiet=%s' % ('Code128', o.pagofacil_barcode, 600, 100, 1, 1)" style="width:350px;height:60px"/>
+        </div>
+    </template>
+
+    <template id="report_invoice_document_with_payments_pagofacil_barcode" inherit_id="l10n_ar.report_invoice_document_with_payments">
+        <!-- footer data -->
+        <div name="footer_left_column" position="inside">
+            <img t-if="o.l10n_ar_afip_qr_code" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s&amp;humanreadable=%s&amp;quiet=%s' % ('Code128', o.pagofacil_barcode, 600, 100, 1, 1)" style="width:350px;height:60px"/>
+        </div>
+    </template>
+</odoo>

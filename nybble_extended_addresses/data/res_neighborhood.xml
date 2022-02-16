@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="seq_res_neighborhood_external_id" model="ir.sequence">
+            <field name="name">Identificador externo de Barrio</field>
+            <field name="code">res.neighborhood.external_id</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

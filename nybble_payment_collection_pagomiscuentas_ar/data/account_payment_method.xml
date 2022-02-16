@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="pago_mis_cuentas" model="account.payment.method">
+        <field name="name">Pago Mis Cuentas</field>
+        <field name="code">pago_mis_cuentas</field>
+        <field name="payment_type">inbound</field>
+        <field name="bank_account_required" eval="True" />
+        <field name="payment_order_only" eval="True" />
+    </record>
+</odoo>

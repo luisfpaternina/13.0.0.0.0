@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="seq_res_street_external_id" model="ir.sequence">
+            <field name="name">Identificador externo de calle</field>
+            <field name="code">res.street.external_id</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

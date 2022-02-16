@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sale_subscription_view_form" model="ir.ui.view">
+            <field name="name">sale_subscription_view_form_iherit_account_period_limit_global_discount</field>
+            <field name="model">sale.subscription</field>
+            <field name="inherit_id" ref="sale_subscription.sale_subscription_view_form"/>
+            <field name="arch" type="xml">
+<!--TODO: implement global discounts on subscriptions                -->
+<!--                <xpath expr="//field[@name='template_id']/.." position="after">-->
+<!--                    <group>-->
+<!--                        <field-->
+<!--                                name="global_discount_ids"-->
+<!--                                widget="many2many_tags"-->
+<!--                                placeholder="Discounts..."-->
+<!--                                groups="base_global_discount.group_global_discount"-->
+<!--                        />-->
+<!--                        <field name="applied_discounts_counter" attrs="{'invisible':[('global_discount_ids', '=', [])]}" readonly="1"/>-->
+<!--                    </group>-->
+<!--                </xpath>-->
+<!--                <xpath expr="//field[@name='recurring_invoice_line_ids']/tree/field[@name='discount']" position="attributes">-->
+<!--                    <attribute name="attrs">{'readonly':1}</attribute>-->
+<!--                </xpath>-->
+                <xpath expr="//field[@name='recurring_invoice_line_ids']/tree/field[@name='price_unit']" position="after">
+                    <field name="discount_id" options="{'no_create': True}"/>
+                    <field name="applied_discounts_counter" readonly="1"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

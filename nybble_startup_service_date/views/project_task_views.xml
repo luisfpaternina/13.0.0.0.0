@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+        <record id="view_service_startup_inherit_view_task_form2" model="ir.ui.view">
+            <field name="name">service.startup.form.view.inherit.view.task.form2</field>
+            <field name="model">project.task</field>
+            <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <field name="tag_ids" position="after">
+                    <field name="origin_sale_order_state" invisible="1"/>
+                    <field name="service_start_up" attrs="{'readonly': [('origin_sale_order_state', '=', 'done')]}"/>
+                </field>
+            </field>
+        </record>
+    </data>
+    <data>
+        <record id="view_service_startup_inherit_project_task_view_form" model="ir.ui.view">
+            <field name="name">service.startup.form.view.inherit.project.task.view.form</field>
+            <field name="model">project.task</field>
+            <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+            <field name="inherit_id" ref="industry_fsm.project_task_view_form"/>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="origin_sale_order_state" invisible="1"/>
+                    <field name="service_start_up" attrs="{'readonly': [('origin_sale_order_state', '=', 'done')]}"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+<!-- -->

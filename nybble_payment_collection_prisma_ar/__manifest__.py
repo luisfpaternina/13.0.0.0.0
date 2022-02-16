@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "nybble_account_payment_return_import",
+    'name': "nybble_payment_collection_prisma_ar",
 
     'summary': """
-        Permite importar los archivos que informan los pagos de las facturas de distintas
-        entidades de procesamiento de pagos.
-        1. Débitos en cuenta del Banco BBVA.
-        2. Débitos con tarjeta de crédito Visa para Prisma.
-        """,
+        Permite generar archivos de texto plano para informar la cobranza de facturas a PRISMA medios de pago.""",
 
     'description': """
         Long description of module's purpose
@@ -24,21 +20,16 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base',
-                'account_payment_return',
+                'account_payment_order',
                 'account_payment_return_import',
-                'account_payment_fix',
-                'account_payment_order'
-    ],
+                'account_banking_mandate',
+                ],
+
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        # 'views/views.xml',
-        # 'views/templates.xml',
         # 'data/account_payment_method.xml',
-        'views/payment_return_import_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        # 'demo/demo.xml',
     ],
 }

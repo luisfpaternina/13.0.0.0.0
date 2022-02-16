@@ -1,0 +1,1 @@
+from . import test_pagofacil_barcode_check_digits

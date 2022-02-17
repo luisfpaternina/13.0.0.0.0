@@ -8,7 +8,7 @@
          </xpath>
 
          <xpath expr="/t/t/div/div[2]/div/div/table/t[4]/tr/td[2]/span" position="attributes">
-            <attribute name="class" separator=" " add="h6"/>
+            <attribute name="class" separator=" " add="h4"/>
          </xpath>
          
       </template>

@@ -3,6 +3,18 @@
    <data> 
       <template id="davitel_invoice_report"  inherit_id="account.report_invoice_document_with_payments">
 
+         <xpath expr="/t/t/div/h2" position="after">
+            <div class="row">
+               <div class="col">
+                  <strong><span>Cliente:</span></strong><br></br>
+                  <strong><span>Calle:</span></strong><br></br>
+                  <strong><span>Ciudad:</span></strong><br></br>
+                  <strong><span>Código postal:</span></strong><br></br>
+                  <strong><span>Lote:</span></strong><br></br>
+               </div>
+            </div>
+         </xpath>
+
          <xpath expr="/t/t/div/div[2]/div/div/table/t[4]/tr/td[2]/span" position="attributes">
             <attribute name="class" separator=" " add="o_bold"/>
          </xpath>

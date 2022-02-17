@@ -53,6 +53,21 @@
                </div>
             </div>
          </div>
+
+         <xpath expr="/t/t/div/h2" position="after">
+            <div class="row">
+               <div class="col-3"/>
+               <div class="col-3"/>
+               <div class="col-3"/>
+               <div class="col-3">
+                  <span>
+                     <strong>Número cliente:</strong>
+                     <br/>
+                  </span>
+                  <span>0003466</span>
+               </div>
+            </div>
+         </xpath>
   
       </template>
    </data>

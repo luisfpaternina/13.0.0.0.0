@@ -51,6 +51,16 @@
                </div>
             </div>
          </xpath>
+
+         <div id="informations" position="replace">
+            <div id="informations" class="row mt8 mb8">
+               <div class="col-6">
+                    <!-- IDENTIFICACION (ADQUIRIENTE-LOCATARIO-PRESTARIO) -->
+                    <!-- (14) Apellido uy Nombre: Denominicacion o Razon Soclial -->
+                    <strong>Customer: </strong><span t-field="o.partner_id"/>
+               </div>
+            </div>
+         </div>
   
       </template>
    </data>

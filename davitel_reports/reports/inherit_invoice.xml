@@ -13,7 +13,7 @@
 
          <xpath expr="/t/t/div/div[2]/div/div/table/t[4]/tr/td[1]/strong" position="replace">
             <strong>
-               <font style="font-size: 21px;">Importe adeudado</font>
+               <font style="font-size: 20px;">Importe adeudado</font>
             </strong>
          </xpath>
          

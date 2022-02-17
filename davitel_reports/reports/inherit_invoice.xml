@@ -35,7 +35,6 @@
             </div>
          </xpath>
 
-         <!--
          <xpath expr="/t/t/div/h2" position="after">
             <div class="row">
                <div class="col">
@@ -43,8 +42,7 @@
                </div>
             </div>
          </xpath>
-      -->
-      
+
          <xpath expr="/t[1]/t[1]/div[1]/h2[1]/span[2]" position="replace">
             pater
          </xpath>

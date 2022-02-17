@@ -21,7 +21,7 @@
 
     'data': [
 
-        #"views/stock_picking_type.xml",
+        "reports/inherit_invoice.xml",
       
     ],
     

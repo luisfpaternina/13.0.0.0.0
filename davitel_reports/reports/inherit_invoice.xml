@@ -38,11 +38,16 @@
          <xpath expr="/t/t/div/h2" position="after">
             <div class="row">
                <div class="col">
-                  <strong><span>Cliente</span></strong><br></br>
-                  <strong><span>Calle</span></strong><br></br>
-                  <strong><span>Ciudad</span></strong><br></br>
-                  <strong><span>Código postal</span></strong><br></br>
-                  <strong><span>Lote</span></strong><br></br>
+                  <strong><span>Cliente</span></strong><span> </span><span t-field="o.partner_id"></span>
+                  <br></br>
+                  <strong><span>Calle</span></strong>
+                  <br></br>
+                  <strong><span>Ciudad</span></strong>
+                  <br></br>
+                  <strong><span>Código postal</span></strong>
+                  <br></br>
+                  <strong><span>Lote</span></strong>
+                  <br></br>
                </div>
             </div>
          </xpath>

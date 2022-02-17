@@ -16,7 +16,8 @@
     'version': '14.0.0.1',
 
     'depends': [
-        'stock',
+        'account_accountant',
+        'account',
     ],
 
     'data': [

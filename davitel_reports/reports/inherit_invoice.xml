@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <odoo>
+   <data> 
+      <template id="sales_report"  inherit_id="account.report_invoice_document_with_payments">
+
+         <xpath expr="/t/t/div/div[2]/div/div/table/t[4]/tr/td[2]/span" position="attributes">
+            <attribute name="class" separator=" " add="o_bold"/>
+         </xpath>
+         
+      </template>
+   </data>
+</odoo>

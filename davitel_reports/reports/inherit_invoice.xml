@@ -38,15 +38,15 @@
          <xpath expr="/t/t/div/h2" position="after">
             <div class="row">
                <div class="col">
-                  <span>New Text Block</span>
+                  <strong><span>Cliente</span></strong><br></br>
+                  <strong><span>Calle</span></strong><br></br>
+                  <strong><span>Ciudad</span></strong><br></br>
+                  <strong><span>Código postal</span></strong><br></br>
+                  <strong><span>Lote</span></strong><br></br>
                </div>
             </div>
          </xpath>
-
-         <xpath expr="/t[1]/t[1]/div[1]/h2[1]/span[2]" position="replace">
-            pater
-         </xpath>
-          
+  
       </template>
    </data>
 </odoo>

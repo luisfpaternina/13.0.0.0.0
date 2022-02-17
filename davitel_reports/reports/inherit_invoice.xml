@@ -16,7 +16,23 @@
                <font style="font-size: 20px;">Importe adeudado</font>
             </strong>
          </xpath>
-         
+
+         <xpath expr="/t[1]/t[1]/div[1]/p[1]" position="replace">
+            
+         </xpath>
+
+         <xpath expr="/t[1]/t[1]/div[1]/p[2]" position="replace">
+            
+         </xpath>
+
+         <xpath expr="/t/t/div/div[2]" position="after">
+            <div class="row">
+               <div class="col">
+                  <strong><span>Modo de pago:</span></strong>
+               </div>
+            </div>
+         </xpath>
+          
       </template>
    </data>
 </odoo>

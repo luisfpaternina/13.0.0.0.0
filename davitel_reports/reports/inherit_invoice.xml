@@ -35,9 +35,11 @@
             </div>
          </xpath>
 
-         <xpath expr="/t/t/div/h2" position="after">
-            <div class="row">
-               <div class="col">
+         <div id="informations" position="replace">
+            <div id="informations" class="row mt8 mb8">
+               <div class="col-6">
+                  <!-- IDENTIFICACION (ADQUIRIENTE-LOCATARIO-PRESTARIO) -->
+                  <!-- (14) Apellido uy Nombre: Denominicacion o Razon Soclial -->
                   <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
                   <br></br>
                   <strong><span>Calle:</span></strong>
@@ -48,16 +50,6 @@
                   <br></br>
                   <strong><span>Lote:</span></strong><span> </span><strong>Manzana:</strong><span> </span><span></span>
                   <br></br>
-               </div>
-            </div>
-         </xpath>
-
-         <div id="informations" position="replace">
-            <div id="informations" class="row mt8 mb8">
-               <div class="col-6">
-                    <!-- IDENTIFICACION (ADQUIRIENTE-LOCATARIO-PRESTARIO) -->
-                    <!-- (14) Apellido uy Nombre: Denominicacion o Razon Soclial -->
-                    <strong>Customer: </strong><span t-field="o.partner_id"/>
                </div>
             </div>
          </div>

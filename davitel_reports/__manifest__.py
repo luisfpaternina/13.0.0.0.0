@@ -18,6 +18,7 @@
     'depends': [
         'account_accountant',
         'account',
+        'account_payment_partner',
     ],
 
     'data': [

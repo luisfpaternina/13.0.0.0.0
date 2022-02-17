@@ -28,7 +28,9 @@
          <xpath expr="/t/t/div/div[2]" position="after">
             <div class="row">
                <div class="col">
-                  <strong><span>Modo de pago:</span></strong><span> </span><span t-field="o.payment_mode_id"></span>
+                  <strong><span>Modo de pago:</span></strong>
+                  <span> </span>
+                  <span t-field="o.payment_mode_id"></span>
                </div>
             </div>
          </xpath>

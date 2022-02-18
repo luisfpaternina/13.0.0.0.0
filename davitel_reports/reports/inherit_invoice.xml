@@ -42,7 +42,7 @@
                   <!-- (14) Apellido uy Nombre: Denominicacion o Razon Soclial -->
                   <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
                   <br></br>
-                  <strong><span>Calle:</span></strong>&nbsp;
+                  <strong><span>Calle:</span></strong><span> </span>
                   <span t-field="o.partner_id.street"></span>
                   <br></br>
                   <strong><span>Ciudad:</span></strong>

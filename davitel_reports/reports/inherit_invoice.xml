@@ -68,6 +68,7 @@
                    <span t-field="o.partner_id.manzana"></span><span> </span>
                   <br></br>
                </div>
+               <!--Agregar campo número de cliente en la parte superior derecha -->
                <div class="col-8" align="center">
                   <span>
                      <strong>Número cliente:</strong>

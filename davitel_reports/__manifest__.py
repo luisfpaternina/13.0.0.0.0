@@ -2,8 +2,7 @@
 {
     'name': "Davitel reports",
 
-    'summary': """
-        stock""",
+    'summary': """This module adds fields in the invoice form""",
 
     'author': "NybbleGroup",
 
@@ -19,6 +18,7 @@
         'account_accountant',
         'account',
         'account_payment_partner',
+        'nybble_extended_addresses',
     ],
 
     'data': [

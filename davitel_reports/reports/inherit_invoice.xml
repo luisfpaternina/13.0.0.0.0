@@ -45,8 +45,7 @@
             <div id="informations" class="row mt8 mb8">
                <div class="col-6">
                   <!--Agregar campos con la información del cliente -->
-                  <!-- IDENTIFICACION (ADQUIRIENTE-LOCATARIO-PRESTARIO) -->
-                  <!-- (14) Apellido uy Nombre: Denominicacion o Razon Soclial -->
+                  <!-- Calle, altura, ciudad, estado, código postal, lote, manzana-->
                   <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
                   <br></br>
                   <strong><span>Calle:</span></strong><span> </span>

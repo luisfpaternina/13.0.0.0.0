@@ -51,6 +51,13 @@
                   <strong><span>Lote:</span></strong><span> </span><strong>Manzana:</strong><span> </span><span></span>
                   <br></br>
                </div>
+               <div class="col-6" align="center">
+                  <span>
+                     <strong>Número cliente:</strong>
+                     <br/>
+                  </span>
+                  <span>0003466</span>
+               </div>
             </div>
          </div>
 

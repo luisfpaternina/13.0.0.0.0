@@ -48,7 +48,9 @@
                   <span t-field="o.partner_id.street"></span>
                   <br></br>
                   <strong><span>Ciudad:</span></strong><span> </span>
-                  <span t-field="o.partner_id.city"></span>
+                  <span t-field="o.partner_id.city"></span><span> </span>
+                  <strong><span>Estado:</span></strong><span> </span>
+                  <span t-field="o.partner_id.state_id"></span><span> </span>
                   <br></br>
                   <strong><span>Código postal:</span></strong><span> </span>
                   <span t-field="o.partner_id.zip"></span>

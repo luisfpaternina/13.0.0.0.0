@@ -3,28 +3,34 @@
    <data> 
       <template id="davitel_invoice_report"  inherit_id="account.report_invoice_document_with_payments">
 
+         <!--Agregar negrita -->
          <xpath expr="/t/t/div/div[2]/div/div/table/t[4]/tr/td[2]/span" position="attributes">
             <attribute name="class" separator=" " add="o_bold"/>
          </xpath>
 
+         <!--Aumentar tamaño de etiqueta (total) en la tabla de productos -->
          <xpath expr="/t/t/div/div[2]/div/div/table/t[4]/tr/td[2]/span" position="attributes">
             <attribute name="class" separator=" " add="h5"/>
          </xpath>
 
+         <!--Aumentar tamaño al total de la tabla de productos -->
          <xpath expr="/t/t/div/div[2]/div/div/table/t[4]/tr/td[1]/strong" position="replace">
             <strong>
                <font style="font-size: 20px;">Total</font>
             </strong>
          </xpath>
 
+         <!--Eliminar parrafo de la vista principal -->
          <xpath expr="/t[1]/t[1]/div[1]/p[1]" position="replace">
             
          </xpath>
 
+         <!--Eliminar parrafo de la vista principal -->
          <xpath expr="/t[1]/t[1]/div[1]/p[2]" position="replace">
             
          </xpath>
 
+         <!--Agregar modo de pago debajo de la tabla de productos -->
          <xpath expr="/t/t/div/div[2]" position="after">
             <div class="row">
                <div class="col">
@@ -38,6 +44,7 @@
          <div id="informations" position="replace">
             <div id="informations" class="row mt8 mb8">
                <div class="col-6">
+                  <!--Agregar campos con la información del cliente -->
                   <!-- IDENTIFICACION (ADQUIRIENTE-LOCATARIO-PRESTARIO) -->
                   <!-- (14) Apellido uy Nombre: Denominicacion o Razon Soclial -->
                   <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>

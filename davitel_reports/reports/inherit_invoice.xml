@@ -43,6 +43,8 @@
                   <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
                   <br></br>
                   <strong><span>Calle:</span></strong><span> </span>
+                  <span t-field="o.partner_id.street"></span><span> </span>
+                  <strong><span>Altura:</span></strong><span> </span>
                   <span t-field="o.partner_id.street"></span>
                   <br></br>
                   <strong><span>Ciudad:</span></strong><span> </span>

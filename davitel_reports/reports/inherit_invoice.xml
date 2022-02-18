@@ -45,9 +45,11 @@
                   <strong><span>Calle:</span></strong><span> </span>
                   <span t-field="o.partner_id.street"></span>
                   <br></br>
-                  <strong><span>Ciudad:</span></strong>
+                  <strong><span>Ciudad:</span></strong><span> </span>
+                  <span t-field="o.partner_id.city"></span>
                   <br></br>
-                  <strong><span>Código postal:</span></strong>
+                  <strong><span>Código postal:</span></strong><span> </span>
+                  <span t-field="o.partner_id.zip"></span>
                   <br></br>
                   <strong><span>Lote:</span></strong><span> </span><strong>Manzana:</strong><span> </span><span></span>
                   <br></br>

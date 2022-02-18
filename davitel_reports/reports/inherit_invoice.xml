@@ -43,9 +43,9 @@
                   <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
                   <br></br>
                   <strong><span>Calle:</span></strong><span> </span>
-                  <span t-field="o.partner_id.street"></span><span> </span>
+                  <span t-field="o.partner_id.street_id"></span><span> </span>
                   <strong><span>Altura:</span></strong><span> </span>
-                  <span t-field="o.partner_id.street"></span>
+                  <span t-field="o.partner_id.street_number"></span>
                   <br></br>
                   <strong><span>Ciudad:</span></strong><span> </span>
                   <span t-field="o.partner_id.city"></span><span> </span>
@@ -55,7 +55,10 @@
                   <strong><span>Código postal:</span></strong><span> </span>
                   <span t-field="o.partner_id.zip"></span>
                   <br></br>
-                  <strong><span>Lote:</span></strong><span> </span><strong>Manzana:</strong><span> </span><span></span>
+                  <strong><span>Lote:</span></strong><span> </span>
+                  <span t-field="o.partner_id.lote"></span><span> </span>
+                  <strong>Manzana:</strong><span> </span><span></span>
+                   <span t-field="o.partner_id.manzana"></span><span> </span>
                   <br></br>
                </div>
                <div class="col-8" align="center">

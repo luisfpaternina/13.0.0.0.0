@@ -33,7 +33,19 @@ class AccountMove(models.Model):
     register_date = fields.Date(
         string="Register date")
     is_rejection = fields.Boolean(
-        string="Is rejection")
+        string="Is rejection",
+        compute="_compute_is_rejection")
+
+
+    @api.depends('returned_payment','name')
+    def _compute_is_rejection(self):
+        payment_return_obj = self.env['payment.return'].search([('move_id', '=', self.id)], limit=1)
+        logging.info(".............................................................................")
+        logging.info(payment_return_obj)
+        if payment_return_obj:
+            self.is_rejection = True
+        else:
+            self.is_rejection = False
 
 
     @api.depends('days_difference')

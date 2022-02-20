@@ -197,34 +197,35 @@ class AccountMove(models.Model):
                 sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
                 subscription_obj = record.env['sale.subscription'].search([])
                 rejected_value = self.env.company.rejected_value
-                if sale_obj:
-                    record.is_validate = True
-                    if sl in sale_obj.order_line.subscription_id:
-                        sl.display_name
-                        c = 1
-                        for line in sl.recurring_invoice_line_ids:
-                            range_number = len(sl.recurring_invoice_line_ids)
-                            if c < range_number:
-                                quantity = 1
-                                price_unit = 0
-                            else:
-                                quantity = 1
-                                price_unit = rejected_value
+                for s in subscription_obj:
+                    if sale_obj:
+                        record.is_validate = True
+                        if s in sale_obj.order_line.subscription_id:
+                            s.display_name
+                            c = 1
+                            for line in s.recurring_invoice_line_ids:
+                                range_number = len(s.recurring_invoice_line_ids)
+                                if c < range_number:
+                                    quantity = 1
+                                    price_unit = 0
+                                else:
+                                    quantity = 1
+                                    price_unit = rejected_value
 
-                            vals = {
-                                'product_id': record.expense_product.id,
-                                'name': record.expense_name,
-                                'price_unit': price_unit,
-                                'quantity': quantity,
-                                'uom_id': sl.recurring_invoice_line_ids.uom_id.id,
-                                }
-                            line.write(vals)
-                            c = c + 1
-                        break
+                                vals = {
+                                    'product_id': record.expense_product.id,
+                                    'name': record.expense_name,
+                                    'price_unit': price_unit,
+                                    'quantity': quantity,
+                                    'uom_id': s.recurring_invoice_line_ids.uom_id.id,
+                                    }
+                                line.write(vals)
+                                c = c + 1
+                            break
+                        else:
+                            record.is_validate = False
                     else:
                         record.is_validate = False
-                else:
-                    record.is_validate = False
             elif record.invoice_payment_state == 'paid' and record.is_validate_date:
                 sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
                 subscription_obj = record.env['sale.subscription'].search([])

@@ -35,15 +35,23 @@ class AccountMove(models.Model):
     is_rejection = fields.Boolean(
         string="Is rejection",
         compute="_compute_is_rejection")
+    is_generate_expense = fields.Boolean(
+        string="Generate expense")
 
 
     @api.depends('returned_payment','name')
     def _compute_is_rejection(self):
+        # Vericar si el motivo de devolución genera gasto administrativo
         payment_return_obj = self.env['payment.return'].search([('move_id', '=', self.id)], limit=1)
         logging.info(".............................................................................")
         logging.info(payment_return_obj)
         if payment_return_obj:
             self.is_rejection = True
+            for line in self.line_ids:
+                if line.reason_id.reason_id.is_generate_expense:
+                    self.is_rejection = True
+                else:
+                    self.is_rejection = False
         else:
             self.is_rejection = False
 

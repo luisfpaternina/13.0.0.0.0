@@ -55,6 +55,7 @@ class AccountMove(models.Model):
                     self.is_generate_expense = False
         else:
             self.is_rejection = False
+            self.is_generate_expense = False
 
 
     @api.depends('days_difference')

@@ -49,7 +49,7 @@ class AccountMove(models.Model):
         if payment_return_obj:
             self.is_rejection = True
             for p in payment_return_obj.line_ids:
-                if p.reason_id.reason_id.is_generate_expense:
+                if p.reason_id.is_generate_expense:
                     self.is_generate_expense = True
                 else:
                     self.is_generate_expense = False

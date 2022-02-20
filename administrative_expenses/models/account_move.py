@@ -199,11 +199,11 @@ class AccountMove(models.Model):
                 rejected_value = self.env.company.rejected_value
                 if sale_obj:
                     record.is_validate = True
-                    if s in sale_obj.order_line.subscription_id:
-                        s.display_name
+                    if sl in sale_obj.order_line.subscription_id:
+                        sl.display_name
                         c = 1
-                        for line in s.recurring_invoice_line_ids:
-                            range_number = len(s.recurring_invoice_line_ids)
+                        for line in sl.recurring_invoice_line_ids:
+                            range_number = len(sl.recurring_invoice_line_ids)
                             if c < range_number:
                                 quantity = 1
                                 price_unit = 0
@@ -216,7 +216,7 @@ class AccountMove(models.Model):
                                 'name': record.expense_name,
                                 'price_unit': price_unit,
                                 'quantity': quantity,
-                                'uom_id': s.recurring_invoice_line_ids.uom_id.id,
+                                'uom_id': sl.recurring_invoice_line_ids.uom_id.id,
                                 }
                             line.write(vals)
                             c = c + 1

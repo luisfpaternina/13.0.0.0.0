@@ -40,7 +40,9 @@ class AccountMove(models.Model):
         compute="_compute_is_rejection")
 
 
-    @api.depends('returned_payment','name')
+    @api.depends(
+        'returned_payment',
+        'name')
     def _compute_is_rejection(self):
         # Vericar si el motivo de devolución genera gasto administrativo
         payment_return_obj = self.env['payment.return'].search([('move_id', '=', self.id)], limit=1)

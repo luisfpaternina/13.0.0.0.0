@@ -48,8 +48,8 @@ class AccountMove(models.Model):
         logging.info(payment_return_obj)
         if payment_return_obj:
             self.is_rejection = True
-            for line in self.line_ids:
-                if line.reason_id.reason_id.is_generate_expense:
+            for p in payment_return_obj.line_ids:
+                if p.reason_id.reason_id.is_generate_expense:
                     self.is_generate_expense = True
                 else:
                     self.is_generate_expense = False

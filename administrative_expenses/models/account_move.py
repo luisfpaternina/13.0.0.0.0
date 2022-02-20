@@ -32,6 +32,8 @@ class AccountMove(models.Model):
         related="partner_id.is_blocking")
     register_date = fields.Date(
         string="Register date")
+    is_rejection = fields.Boolean(
+        string="Is rejection")
 
 
     @api.depends('days_difference')

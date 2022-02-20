@@ -36,7 +36,8 @@ class AccountMove(models.Model):
         string="Is rejection",
         compute="_compute_is_rejection")
     is_generate_expense = fields.Boolean(
-        string="Generate expense")
+        string="Generate expense",
+        compute="_compute_is_rejection")
 
 
     @api.depends('returned_payment','name')
@@ -49,9 +50,9 @@ class AccountMove(models.Model):
             self.is_rejection = True
             for line in self.line_ids:
                 if line.reason_id.reason_id.is_generate_expense:
-                    self.is_rejection = True
+                    self.is_generate_expense = True
                 else:
-                    self.is_rejection = False
+                    self.is_generate_expense = False
         else:
             self.is_rejection = False
 

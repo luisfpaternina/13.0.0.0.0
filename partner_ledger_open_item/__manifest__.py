@@ -8,7 +8,7 @@
     'license': 'LGPL-3',
     'category': 'Accounting',
     'depends': [
-        'account',
+        'account_accountant',
     ],
     'data': [
         "views/partner_ledger_open_items_view.xml"

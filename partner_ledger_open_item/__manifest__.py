@@ -6,13 +6,12 @@
     'author': 'Syscoon',
     'website': '',
     'license': 'LGPL-3',
-    'category': 'Account',
+    'category': 'Accounting',
     'depends': [
-        'account_reports',
+        'account',
     ],
     'data': [
-        "security/ir.model.access.csv",
-        "data/partner_ledger_open_items_view.xml"
+        "views/partner_ledger_open_items_view.xml"
     ],
     'auto_install': False,
     'application': True,

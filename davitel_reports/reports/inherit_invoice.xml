@@ -41,7 +41,7 @@
             </div>
          </xpath>
 
-         <div id="informations" position="replace">
+         <div id="informations" position="inside">
             <div id="informations" class="row mt8 mb8">
                <div class="col-6">
                   <!--Agregar campos con la información del cliente -->

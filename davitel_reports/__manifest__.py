@@ -19,6 +19,7 @@
         'account',
         'account_payment_partner',
         'nybble_extended_addresses',
+        'l10n_ar',
     ],
 
     'data': [

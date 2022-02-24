@@ -11,17 +11,6 @@
 
         
 
-         <!--Agregar modo de pago debajo de la tabla de productos -->
-         <xpath expr="/t/t/div/div[2]" position="after">
-            <div class="row">
-               <div class="col">
-                  <strong><span>Modo de pago:</span></strong>
-                  <span> </span>
-                  <span t-field="o.payment_mode_id"></span>
-               </div>
-            </div>
-         </xpath>
-
          <div id="informations" position="replace">
             <div id="informations" class="row mt8 mb8">
                <div class="col-6">

@@ -5,7 +5,12 @@
 
          <xpath expr="//div[@class='page']" position="inside">
                 <div class ="page">
-                  <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
+                   <strong>Modo de pago:</strong><span></span>
+                </div>
+         </xpath>
+
+         <xpath expr="//h2" position="after">
+            <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
                   <br></br>
                   <strong><span>Calle:</span></strong><span> </span>
                   <span t-field="o.partner_id.street_id"></span><span> </span>
@@ -25,11 +30,6 @@
                   <strong>Manzana:</strong><span> </span><span></span>
                    <span t-field="o.partner_id.manzana"></span><span> </span>
                   <br></br>
-                </div>
-         </xpath>
-
-         <xpath expr="//h2" position="after">
-            <p>test davitell</p>
          </xpath>
 
       </template>

@@ -6,16 +6,6 @@
          <xpath expr="//div[@class='page']" position="replace">
                 <div class ="page">
                     Your Code
-                </div>
-         </xpath>
-
-        
-
-         <div id="informations" position="replace">
-            <div id="informations" class="row mt8 mb8">
-               <div class="col-6">
-                  <!--Agregar campos con la información del cliente -->
-                  <!-- Calle, altura, ciudad, estado, código postal, lote, manzana-->
                   <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
                   <br></br>
                   <strong><span>Calle:</span></strong><span> </span>
@@ -36,17 +26,11 @@
                   <strong>Manzana:</strong><span> </span><span></span>
                    <span t-field="o.partner_id.manzana"></span><span> </span>
                   <br></br>
-               </div>
-               <!--Agregar campo número de cliente en la parte superior derecha -->
-               <div class="col-8" align="center">
-                  <span>
-                     <strong>Número cliente:</strong>
-                     <br/>
-                  </span>
-                  <span></span>
-               </div>
-            </div>
-         </div>
+                </div>
+         </xpath>
+
+
+       
 
       </template>
    </data>

@@ -3,7 +3,7 @@
    <data> 
       <template id="davitel_invoice_report"  inherit_id="account.report_invoice_document">
 
-         <xpath expr="//div[@class='page']" position="replace">
+         <xpath expr="//div[@class='page']" position="inside">
                 <div class ="page">
                     Your Code
                   <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>

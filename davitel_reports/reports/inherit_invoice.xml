@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
  <odoo>
    <data> 
-      <template id="davitel_invoice_report"  inherit_id="account.report_invoice_with_payments">
+      <template id="davitel_invoice_report"  inherit_id="account.report_invoice_document">
 
          <xpath expr="//div[@class='page']" position="replace">
                 <div class ="page">

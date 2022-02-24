@@ -32,11 +32,9 @@
             <strong>Manzana:</strong><span> </span><span></span>
             <span t-field="o.partner_id.manzana"></span><span> </span>
             <br></br>
-            <strong>
-               <font style="font-size: 20px;">Total</font>
-            </strong>
          </xpath>
 
+         <!--Reemplazar tr en tabla de totales para agregar mas tamaño al TOTAL -->
          <xpath expr="//tr[@class='border-black o_total']" position="replace">
             <tr class="border-black o_total">
                <td><strong style="font-size: 20px;">Total</strong></td>

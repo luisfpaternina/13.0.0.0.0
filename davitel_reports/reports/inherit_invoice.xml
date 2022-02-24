@@ -5,7 +5,6 @@
 
          <xpath expr="//div[@class='page']" position="inside">
                 <div class ="page">
-                    Your Code
                   <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
                   <br></br>
                   <strong><span>Calle:</span></strong><span> </span>
@@ -29,8 +28,9 @@
                 </div>
          </xpath>
 
-
-       
+         <xpath expr="//h2" position="after">
+            <p>test davitell</p>
+         </xpath>
 
       </template>
    </data>

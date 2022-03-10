@@ -6,7 +6,7 @@
          <!--Agregar campo modo de pago -->
          <xpath expr="//div[@class='page']" position="inside">
                 <div class ="page">
-                   <strong>Modo de pago:</strong><span></span>
+                   <strong>Modo de pago:</strong><span t-field="o.payment_mode_id"></span>
                 </div>
          </xpath>
 

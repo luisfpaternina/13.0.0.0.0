@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <odoo>
+  <data>
+    <template id="inherit_l10n_ar_davitel_invoice_report"  inherit_id="l10n_ar.report_invoice_document_with_payments">
+      <!-- replace information section and usage argentinean style -->
+        <div id="informations" position="replace">
+            <div id="informations" class="row mt8 mb8">
+                <div class="col-6">
+
+                    <!-- IDENTIFICACION (ADQUIRIENTE-LOCATARIO-PRESTARIO) -->
+
+                    <!-- (14) Apellido uy Nombre: Denominicacion o Razon Soclial -->
+                    <strong align="right"></strong><span/>
+
+                    <!-- (15) Domicilio Comercial -->
+                    <br/>
+                    <span />
+
+                    <!-- (16) Responsabilidad AFIP -->
+                    <strong></strong><span/>
+
+                    <!-- (17) CUIT -->
+                    <t t-if="o.partner_id.vat and o.partner_id.l10n_latam_identification_type_id and o.partner_id.l10n_latam_identification_type_id.l10n_ar_afip_code != '99'">
+                        
+                    </t>
+
+                </div>
+                <div class="col-6">
+
+                    <t t-if="o.invoice_date_due">
+                        <strong></strong>
+                        <span/>
+                    </t>
+
+                    <t t-if="o.invoice_payment_term_id" name="payment_term">
+                        <br/><strong>Payment Terms: </strong><span t-field="o.invoice_payment_term_id.name"/>
+                    </t>
+
+                    <t>
+                        
+                    </t>
+
+                    <t>
+                        <br/><strong></strong>
+                        <span/>
+                    </t>
+
+                    <!-- (18) REMITOS -->
+                    <!-- We do not have remitos implement yet. print here the remito number when we have it -->
+
+                    <t t-if="o.invoice_incoterm_id">
+                        <br/><strong>Incoterm:</strong><span t-field="o.invoice_incoterm_id.name"/>
+                    </t>
+
+                </div>
+
+            </div>
+        </div>
+    </template>
+  </data>
+</odoo>

@@ -25,6 +25,7 @@
     'data': [
 
         "reports/inherit_invoice.xml",
+        "reports/inherit_l10n_ar_report.xml",
       
     ],
     

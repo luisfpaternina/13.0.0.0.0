@@ -12,7 +12,7 @@
 
          <!--Agregar campos de cliente -->
          <xpath expr="//h2" position="after">
-            <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span>
+            <strong><span>Cliente:</span></strong><span> </span><span t-field="o.partner_id"></span><span> </span><strong><span>Número del cliente:</span></strong><span t-field="o.partner_id.customer_number"></span>
             <br></br>
             <strong><span>Calle:</span></strong><span> </span>
             <span t-field="o.partner_id.street_id"></span><span> </span>
